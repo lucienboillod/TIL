@@ -1,3 +1,5 @@
+We can easily init a structure :
+
 ~~~c
 struct something {
   int a;
