@@ -35,6 +35,12 @@ We can call a function pointer with `callq` and by puting a star in front of the
 callq *%rax
 ~~~
 
+Division
+--------
+
+The `div` will div `[%edx,%eax]`. `%edx` need to be set to zero before the division to not raise an exception (if the result 
+cannot be stored in a register). The quotient is stored in `%eax` and the rest in `%edx`.
+
 Disassemble with gdb
 --------------------
 
