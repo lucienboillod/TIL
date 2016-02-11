@@ -1,6 +1,41 @@
 x86-64 Cheatsheet
 =================
 
+Prologue/Epilogue
+-----------------
+
+*In x86_32*
+
+~~~c
+int func(int a, int b)
+{
+  int c = a + b;
+  
+  c--;
+  
+  return c;
+}
+~~~
+
+~~~assembly
+func:
+  // Prologue
+  push %ebp       // Save old base
+  mov %esp, %ebp  // Init the new base pointer
+  sub $8, %esp    // Create the local frame
+  
+  mov 4(%ebp), %eax // 4(%ebp) because we push %ebp already
+  add 8(%ebp), %eax
+  dec %eax
+  
+  // Epilogue
+  mov %ebp, %esp
+  pop %ebp
+~~~
+
+We need to save the old base, then we move the stack pointer in `%ebp`.
+The goal of `%ebp` is to keep the top of our stack.
+
 Call a function
 ---------------
 
