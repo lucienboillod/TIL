@@ -23,3 +23,10 @@ We are given a data set and already know what are correct outputs, so we establi
 * **regression**: we provided some right answers, and the algo predict some more answers -> map input variables into continuous function.
 * **classification**: we provided discrete valued output, and then we try to predict an output based on probability -> map input variables into discrete categories.
 NB: In classification, we can use a lot of attributes, then cross between output to predict our output, the more we use attributes the more reliable can be the answer.
+
+Unsupervised
+------------
+Approach problems with little or no idea of what the results should look like.
+
+* **clustering**: regroup data (google news, social network analysis, market segmentation ...) based on relationships among variables in the data.
+* **non-clustering**: example find the locutor of a conversation.
