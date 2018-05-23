@@ -1,6 +1,6 @@
 Machine Learning
 ===============
-by Stanford University
+Stanford University
 
 Definition
 ----------
@@ -30,3 +30,12 @@ Approach problems with little or no idea of what the results should look like.
 
 * **clustering**: regroup data (google news, social network analysis, market segmentation ...) based on relationships among variables in the data.
 * **non-clustering**: example find the locutor of a conversation.
+
+Model Representation
+--------------------
+Let's use x<sup>(i)</sup> to denote input variable and y<sup>(i)</sup> the output variable that we are trying to predict. 
+
+A pair (x<sup>(i)</sup>, y<sup>(i)</sup>) is called a trainning example. A list of *m* training examples is a training set.
+
+Given a training set, the goal is to learn a function h: X -> Y, so that h(x) is a good predictor fot he corresponding value of y.
+This function h is called a **hypothesis**
