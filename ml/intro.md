@@ -39,3 +39,12 @@ A pair (x<sup>(i)</sup>, y<sup>(i)</sup>) is called a trainning example. A list 
 
 Given a training set, the goal is to learn a function h: X -> Y, so that h(x) is a good predictor fot he corresponding value of y.
 This function h is called a **hypothesis**
+
+Cost Function
+-------------
+Measure the accuracy of the hypothesis function.
+Example with the **squared error function**
+
+Gradient descent
+----------------
+It is a function used to minimize the cost function.
