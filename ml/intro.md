@@ -42,8 +42,9 @@ This function h is called a **hypothesis**
 
 Cost Function
 -------------
-Measure the accuracy of the hypothesis function.
-Example with the **squared error function**
+Measure the accuracy of the hypothesis function. This takes an average difference of all the results of the hypothesis, so this basically compute the error.
+The **squared error function** is an example of cost function (See: [link](https://medium.com/@lachlanmiller_52885/machine-learning-week-1-cost-function-gradient-descent-and-univariate-linear-regression-8f5fe69815fd))
+
 
 Gradient descent
 ----------------
