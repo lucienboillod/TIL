@@ -36,6 +36,12 @@ There is no simple answer with inlining, it can increase aswell as decrease the 
 
 NB: ```constexpr``` implies inline.
 
+Constexpr
+---------
+
+```constexpr``` is a specifier that declares that it is possible to evaluate the value of the function or variable at compile time.
+
+
 Class notions
 -------------
 
