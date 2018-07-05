@@ -34,6 +34,7 @@ Inlining increases executable size, but it specific cases it can also decreases 
 
 There is no simple answer with inlining, it can increase aswell as decrease the performances, it depends of the use.
 
+NB: ```constexpr``` implies inline.
 
 Class notions
 -------------
